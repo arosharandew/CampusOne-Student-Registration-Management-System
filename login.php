@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
 
 
-    if ($username === 'Dulmini' && $password === 'Dulmini123') {
+    if ($username === 'Admin' && $password === 'Admin123') {
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['admin_username'] = $username;
         header('Location: pages/dashboard.php');
